@@ -109,7 +109,7 @@ Durante o streaming, podem ocorrer erros reportados no próprio canal SSE:
 ## Regras de Negócio
 
 *   **Histórico de Conversa:** O sistema mantém automaticamente o histórico por `chat_id`. Cada novo `prompt` adiciona a mensagem do usuário e a resposta do assistente ao histórico daquela conversa.
-*   **Consumo:** Cada requisição bem-sucedida (início do stream) consome **0.05 crédito** da chave de API, independente do tamanho da resposta.
+*   **Consumo:** Cada requisição bem-sucedida (início do stream) consome **1.0 crédito** da chave de API, independente do tamanho da resposta.
 *   **Timeout:** A conexão com o provedor de IA tem limite de **120 segundos**. Caso ultrapasse, um evento `error` é enviado e o stream é fechado.
 *   **Persistência:** O histórico é armazenado e reutilizado em chamadas posteriores com o mesmo `chat_id`.
 

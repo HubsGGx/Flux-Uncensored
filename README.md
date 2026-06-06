@@ -42,7 +42,7 @@ Inicia uma sessão de chat com streaming de eventos em tempo real.
 | Parâmetro | Tipo | Obrigatório | Descrição |
 | :--- | :--- | :--- | :--- |
 | `key` | `string` | Sim | Chave de API válida |
-| `prompt` | `string` | Sim | Mensagem enviada para a IA (mínimo 2 caracteres, máximo 2000) |
+| `prompt` | `string` | Sim | Mensagem enviada para a IA (mínimo 2 caracteres, máximo 7500) |
 | `chat_id` | `string` | Sim | Identificador único da conversa (máximo 6 caracteres, usado para manter histórico) |
 | `model` | `string` | Sim | Modelo da IA (conforme tabela de modelos disponíveis) |
 
@@ -89,7 +89,7 @@ A resposta é um fluxo de **linhas JSON puras** (cada linha é um objeto JSON, s
 | :--- | :--- | :--- |
 | 400 | `PROMPT_REQUIRED` | Parâmetro `prompt` não informado ou não é string |
 | 400 | `PROMPT_TOO_SHORT` | Prompt com menos de 2 caracteres |
-| 400 | `PROMPT_TOO_LONG` | Prompt com mais de 2000 caracteres |
+| 400 | `PROMPT_TOO_LONG` | Prompt com mais de 7500 caracteres |
 | 400 | `CHAT_ID_REQUIRED` | Parâmetro `chat_id` não informado |
 | 400 | `CHAT_ID_TOO_LONG` | `chat_id` com mais de 6 caracteres |
 | 400 | `MODEL_REQUIRED` | Parâmetro `model` não informado |

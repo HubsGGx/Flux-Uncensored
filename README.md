@@ -8,7 +8,7 @@ A Flux IA API permite a integração de capacidades avançadas de inteligência 
 
 ## Informações Gerais
 
-*   **Base URL:** `https://hubsdev.com`
+*   **Base URL:** `https://fluxdevservice.com`
 *   **Formato de Dados:** Server-Sent Events (SSE) – cada linha é um JSON puro
 *   **Autenticação:** Chave de API via parâmetro `key`
 *   **Timeout Padrão:** 120 segundos
